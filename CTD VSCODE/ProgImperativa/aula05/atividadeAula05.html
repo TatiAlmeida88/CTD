@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cotação Dólar</title>
+</head>
+<body>
+    <script>
+
+var nomeUsuario = prompt('Qual seu nome?')
+
+function cotacao(){
+    var dolar = prompt('Quantos dólares gostaria de cotar?')
+    var reais = dolar*5.6
+    if (window.confirm('Você gostaria de cotar US$'+dolar+' ?')){
+        alert('Olá, '+nomeUsuario+', US$ '+dolar+' valem R$ '+reais+' hoje.')
+    }
+        else {
+            cotacao()
+        }
+}
+
+cotacao ()
+
+setTimeout(() => {
+    window.location.href = 'https://www.cotacao.com.br'
+}, 5000);
+
+    </script>
+</body>
+</html>
+
+
+<!-- Equipe: Denis Carbone, Janaina Santos, Tulio Ferreira, William Brito, Pedro Oh-->
