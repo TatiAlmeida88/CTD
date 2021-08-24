@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de IMC</title>
+</head>
+
+<body>
+
+    <script>
+    //Grupo Sala 5 - Carlos Alberto, Tatiana ALmeida, Lilian Melim, Paulo Alexandre e Nuno Marinho
+
+    function CalculeIMC(){
+    
+    //Nível I
+
+    var nome = prompt('Qual o seu nome?')
+    var idade = prompt('Qual sua idade?')
+    var altura = prompt('Qual sua altura? Informe no formato x.xx')
+    var peso = prompt('Qual sua peso?')
+
+    function IMC(peso,altura){
+        var valorIMC = peso/(altura*altura)
+        return Math.round(valorIMC)
+    }
+        
+    alert (nome+', seu IMC é aproximadamente igual a '+IMC(peso,altura))
+
+
+    //Nível II
+        
+    function classificacaoIMC(IMC){
+        if (IMC(peso,altura) < 18.5){
+            return 'Magreza'}
+             
+                else if (IMC(peso,altura) <= 24.9){
+                    return 'Normal'}
+                    
+                        else if (IMC(peso,altura) <= 29.9){
+                            return 'Sobrepeso, com obesidade grau I'}
+
+                            else if (IMC(peso,altura) <=39.9){
+                                return 'Obesidade, de grau II'}
+
+                                else {return 'Obesidade grave, de grau III'}
+    }
+
+    alert ('Você se enquadra no perfil '+classificacaoIMC(IMC))
+    
+    }
+    
+    </script>
+
+<!--Nível III-->
+
+<h1>Cálculo IMC</h1>
+
+<p>
+
+IMC é a sigla para Índice de Massa Corpórea, parâmetro adotado pela Organização Mundial de Saúde para calcular o peso ideal de cada pessoa. <br><br>
+
+O índice é calculado da seguinte maneira: divide-se o peso do paciente pela sua altura elevada ao quadrado. Diz-se que o indivíduo tem peso normal quando o resultado do IMC está entre 18,5 e 24,9. <br><br>
+    
+Quer descobrir seu IMC? Insira seu peso e sua altura nos campos abaixo e compare com os índices da tabela. Importante: siga os exemplos e use pontos como separadores.
+    
+</p>
+
+<button onclick="CalculeIMC()">Calcule seu IMC</button>
+
+<p></p>
+
+<img width=600px src="https://www.fetalmed.net/wp-content/uploads/2020/09/imagem-destacada-imc.jpg">
+
+</body>
+
+</html>

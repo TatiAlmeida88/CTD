@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Funções, operadores matemáticos e lógicos</title>
+</head>
+<body>
+    
+    <script>
+
+        function saudar(){
+        // 1. Guarda o nome do usuário.
+        var nomeDoUsuario = prompt("Qual o seu nome?");
+        // 2. Guarda a quantidade de dolares que o usuário deseja cotar.
+        var quantidadeDolares = prompt("Quantos dólares gostaria de cotar?");
+        // 3. Confirmar valor
+        var confirmar = window.confirm("Você confirma que o valor para cotação é US$" + quantidadeDolares + "?")
+        if (confirmar == true){
+        // 4. Se o valor estiver correto, apresenta o resultado e redireciona para a página de cotação após 5s
+            var cotacaoDolarHoje = 5.3;
+            alert(`Olá ${nomeDoUsuario}. US$ ${quantidadeDolares} valem R$ ${quantidadeDolares * cotacaoDolarHoje} hoje.`);
+            setTimeout(function() {
+            window.location.href = "https://www.cotacao.com.br/";
+        }, 5000);
+
+        }else{
+        // 5. Senão, retorna ao início da função
+        saudar();
+        }
+        
+        }
+
+        saudar();
+
+    </script>
+</body>
+</html>
