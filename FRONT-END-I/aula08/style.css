@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Klee+One:wght@600&family=Rampart+One&display=swap');
+
+.título-principal {
+
+    font-family: 'Rampart One', cursive;
+    color: #f100d1;
+    
+}
+
+
+body {
+
+    background-color: #000000;
+}
+
+
+div {
+
+    font-family: 'Klee One', cursive;
+    color: #ffff;
+    background-color: #f100d141;
+    height: 200px;
+    background-image: url('cat.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.div2 {
+
+    color: #ffff;
+    background-color: #f100d141;
+    height: 200px;
+    background-image: url('cat.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    
+}
