@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script type='text/javascript'>
+
+        /*
+        1 - São considerados falsy (falso):
+            false
+            0
+            '' (string vazia)
+            null
+            undefined
+            NaN
+        2 - Demais casos são considerados verdadeiros
+        */
+    
+    
+        var diaDaSemana = 'segunda'
+    
+        switch (diaDaSemana) {
+            case 'domingo': alert('null')
+            break;
+    
+            case 'segunda': alert('ok')
+            break;
+        }
+        
+        
+    
+        var carro = {
+            marca: 'toyota',
+            modelo: 'etios',
+            ano: 2018,
+            cor: 'prata'
+        }
+    
+        alert(carro.ano)
+    
+    </script>
+
+
+</body>
+</html>
