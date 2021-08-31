@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 09 - Mesa de trabalho</title>
+</head>
+<body>
+    
+    <script type="text/javascript">
+        /*
+            Converter Fahrenheit para Celsius - Nível I
+            1.	Com base no código fonte cedido pelo professor:
+            a.	Converta os  valores da lista, que estão em Fahrenheit, para celsius?
+
+            Observação: Utilize map para ter acesso a todos os itens da variável e utilize a formula com base na formula (0 °C × 9/5) + 32 = 32 °F.
+        */
+        var valoresEmFahrenheits = [0, 32, 45, 50, 75, 80, 120];
+        var valoresEmCelsius = valoresEmFahrenheits.map(function(valor){
+            console.log((valor-32)*5/9);
+        });
+
+
+        /*
+            Filtre nomes com menos de cinco letras - Nível II
+            1.	Filtre todos os nomes com menos de cinco letras.
+            
+            Observação: Utilize filter para ter acesso a todos os itens da variável – Necesse caso eu não vou dá nenhuma pista kkk.
+        */
+        var listaDeNomes = ['Salomão', 'Angela', 'Dayane', 'Willian', 'Ana', 'Paulo', 'Junior', 'Edu', 'Caio', 'Joe', 'Ivo', 'Ivan'];
+        var nomesCincoLetras = listaDeNomes.filter(function(valor){
+            if(valor.length<5){console.log(valor)};
+        });
+
+        /*
+            Remova números duplicados e filtre todos os números pares - Nível III (Cereja do bolo)
+
+            1.	Remova todos os valores duplicados;
+            2.	Certifique-se que os valores estão duplicados;
+            3.	Filtre todos os números pares;
+            Observação: Utilize os metodos filter e every para realizar as operações.
+
+        */
+        var valoresDuplicados = [2, 3, 4, 5, 4, 12, 19, 7, 2, 4, 10, 25, 50, 3, 5];
+        var valoresSemDuplicacao = [...new Set (valoresDuplicados)];
+        console.log(valoresSemDuplicacao);
+        var valoresPares = valoresSemDuplicacao.filter(function(valor){
+            if(valor%2==0){console.log(valor)};
+        });
+           
+    </script>
+
+    
+</body>
+</html>

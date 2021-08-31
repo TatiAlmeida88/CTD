@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Array parte I</title>
+</head>
+<body>
+    
+    <script>
+
+        var frutas = ['Laranja', 'Banana', 'Maçã'];
+        frutas.length; // 3
+        frutas[0]; // Laranja
+
+        // Adicionar ao fim
+        frutas.push('Abacate'); // ['Laranja', 'Banana', 'Maçã', 'Abacate'];
+        // Remove o último item da lista
+        frutas.pop(); // ['Laranja', 'Banana', 'Maçã'];
+        // Remove o primeiro item da lista
+        frutas.shift(); // ['Banana', 'Maçã'];
+        // Adiciona ao início
+        frutas.unshift('Morango'); // ['Morango', 'Banana', 'Maçã'];
+        // Procurar um índice da Array
+        frutas.indexOf('Banana'); // 1
+        // Remove um ou mais itens pela posição/index
+        // ['Morango', 'Banana', 'Maçã'];
+        //     0           1        2
+        frutas.splice(1,2); // Banana
+
+
+        // Tipo de valores que podemos incluir em um Array
+        var valoresAleatorios = ['abc', 1, 1.4, { nome: 'Willian' }];
+
+
+    </script>
+</body>
+</html>
