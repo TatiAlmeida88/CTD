@@ -1,0 +1,39 @@
+.banner{
+    background-image: url('studioghibli.jpg');
+    width: 400px;
+    height: 600px;
+    border: 20px blueviolet double;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 10px 0px;
+}
+
+.título{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.637);
+    font-size: 70px;
+    border-radius: 20px;
+    padding: 20px;
+    border: black 5px solid;
+    margin: 20px;
+}
+
+.subtítulo{
+    padding: 20px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(17, 39, 110, 0.5);
+    font-size: 30px;
+    border-radius: 20px;
+    border: black 5px solid;
+    margin: 30px;
+}
+
+button{
+    padding: 20px;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(17, 39, 110, 0.5);
+    border-radius: 20px;
+    border: black 5px solid;
+    margin: 50px;
+}
