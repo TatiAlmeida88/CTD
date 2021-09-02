@@ -1,0 +1,145 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: rgba(0, 0, 0, 0.719);
+    height: 120px;
+    width: 100%;
+    position: fixed;
+    border: black 1px double;
+    z-index: 1000;
+}
+
+body{
+    height: 900px;
+    background-image: url('https://www.bemcolar.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/p/a/papel-de-parede-infantil-quarto-de-bebe-galhos-delicados-fundo-rosa.jpg');
+}
+
+
+
+.logo{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    top: 10px;
+    left: 10px;    
+}
+
+.itensMenu{
+    position: absolute;
+    left: 110px;
+    top: 45px;
+}
+
+.item{
+    background-color: rgba(238, 234, 240, 0.658);
+    padding: 10px 10px;
+    margin: 10px;
+    font-size: 19px; 
+    border-radius: 20%;
+    border: 5px black double;      
+}
+
+.zap{
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 0;
+    border-radius: 20px;
+    z-index: 1000;
+}
+
+.box{
+    width: 200px;
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.295);
+    border: black 1px dashed;
+    border-radius: 10%;
+}
+
+.produto{
+    width: 150px;
+    height: 200px;
+    position: relative;
+    left: 25px;
+    top: 25px;
+    border: black 1px solid;
+
+}
+
+.titulo{
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+    top: 10px;
+}
+
+.posicao1{
+    position: absolute;
+    left: 30px;
+    top: 150px;
+}
+
+.valor{
+    background-color: rgb(204, 83, 150);
+    color: white;
+    width: 30%;
+    position: relative;
+    top: 15px;
+    left: 110px;
+    border: black 1px solid;
+}
+
+.link{
+    position: relative;
+    top: 20px;
+    left: 70px;
+}
+
+.posicao2{
+    position: absolute;
+    left: 280px;
+    top: 150px;
+}
+
+.posicao3{
+    position: absolute;
+    left: 530px;
+    top: 150px;
+}
+
+.posicao4{
+    position: absolute;
+    left: 780px;
+    top: 150px;
+}
+
+.posicao5{
+    position: absolute;
+    left: 30px;
+    top: 530px;
+}
+
+.posicao6{
+    position: absolute;
+    left: 280px;
+    top: 530px;
+}
+
+.posicao7{
+    position: absolute;
+    left: 530px;
+    top: 530px;
+}
+
+.posicao8{
+    position: absolute;
+    left: 780px;
+    top: 530px;
+}
