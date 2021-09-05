@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Glory:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: rgba(84, 39, 156, 0.664);
+    padding: 15px 50px;
+    border: double 10px rgb(0, 0, 0);
+}
+
+body{
+    background-image: url(https://cdn.wallpapersafari.com/7/39/ALym25.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+li{
+    margin-bottom: 30px;
+}
+
+.título-principal{
+    font-family: 'Dancing Script', cursive;
+    font-size: 100px;
+    color: black;
+    position: relative;
+    left: 30px;
+}
+
+.logo{
+    height: 130px;
+    background-color: rgba(255, 255, 255, 0.438);
+    border-radius: 50%;
+}
+
+.logoPosition{
+    position: absolute;
+    right: 50px;
+    top: 40px;
+}
+
+.main{    
+    font-family: 'Glory', sans-serif;
+    font-size: 30px;
+    background-color: rgba(255, 255, 255, 0.74);
+    margin: 50px 50px;
+    border: dotted;
+    padding: 40px 50px;
+    text-align: justify;        
+}
+
+.video{
+    margin: 30px;    
+}
+
+.título-secundário{
+    padding: 0px 10px 40px;
+}
+
+.socialMedias{
+    margin-left: 900px;
+}
+
+.logo{
+    width: 100px;
+    height: 100px;
+    margin: 0px 20px 30px;    
+}
