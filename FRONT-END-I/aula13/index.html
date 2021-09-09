@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="topo">
+        <img src="https://marcas-logos.net/wp-content/uploads/2020/01/Amazon-Logo-1.png">
+        <h1 class="título">Formulário de Cadastro</h1>
+    </div>
+
+    <form class="formulario">
+ 
+        <div class="itens">
+            <label for="name">Nome</label>
+            <input type="text" id="name" name="name" placeholder="Digite seu nome">
+        </div>
+
+        <div class="itens">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="Digite seu e-mail">
+        </div>
+
+        <div class="itens">
+            <label for="socialNumber">CPF</label>
+            <input type="number" maxlength="11" id="socialNumber" name="socialNumber" placeholder="Digite seu CPF">
+        </div>
+
+        <div class="itens">
+            <label for="city">Cidade</label>
+            <select name="city" id="city">
+                <option value="salvador">Salvador</option>
+                <option value="salvador">Muritiba</option>
+                <option value="salvador">Maragojipe</option>
+                <option value="salvador">Madre de Deus</option>
+            </select>
+        </div>
+        
+        <div class="itens">
+            <label for="birthDate">Data de nascimento</label>
+            <input type="date" id="birthDate" name="birthDate" placeholder="Digite sua data de nascimento">
+        </div>
+
+        <div class="itens">
+            <label for="password">Senha</label>
+            <input type="password" id="password" name="password">
+        </div>
+
+        <div class="itens">
+            <label for="passwordRepeat">Repita sua senha</label>
+            <input type="password" id="passwordRepeat" name="passwordRepeat">
+        </div>
+      
+        <div class="caixaTexto">
+            <label for="texto">Comentários/Observações</label>
+            <div>
+                <textarea name="texto" id="texto" cols="30" rows="10"></textarea>
+            </div>
+        </div>
+
+        <button class="cadastrar" type="submit">Cadastrar</button>
+        <button class="limpar" type="reset">Limpar</button>
+
+    </form>
+
+</body>
+</html>

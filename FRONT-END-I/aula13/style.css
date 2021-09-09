@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist&display=swap');
+
+body{
+    font-family: 'Urbanist', sans-serif;
+    background-color: black;
+    color: #2cd4d2;
+}
+
+img{
+    width: 100px;
+    border-radius: 30%;
+    position: absolute;    
+    top: 30px;
+    left: 20px;
+}
+
+label{
+    font-size: 20px;
+    padding: 10px;
+}
+
+input{
+    height: 25px;
+    width: 450px;
+    border-radius: 12px;
+    border-color: #F58800;
+    position: relative;
+    top: 30px;
+    left: -50px;
+    font-size: 15px;
+}
+
+select{
+    height: 30px;
+    width: 450px;
+    border-radius: 12px;
+    border-color: #F58800;
+    position: relative;
+    top: 30px;
+    left: -55px;
+    font-size: 15px;
+}
+
+button{
+    background-color: #F8BC24;
+    font-size: 20px;
+    padding: 5px 30px;
+    border-radius: 12px;
+    position: absolute;
+    top: 840px;
+}
+
+.título{
+    color: #F58800;
+    position: absolute;
+    top: 20px;
+    left: 150px;
+}
+
+.topo{
+    background-color: rgba(255, 255, 255, 0.897);
+    height: 100px;
+    width: 600px;
+    border-radius: 20px;
+}
+
+.formulario{
+    background-color: rgba(255, 255, 255, 0.185);
+    height: 900px;
+    width: 600px;
+    border-radius: 20px;
+    position: absolute;
+    top: 115px;
+}
+
+.itens{
+    padding: 10px 10px 40px;    
+}
+
+.caixaTexto{
+    position: absolute;
+    left: 10px;
+    top: 570px;
+}
+
+.cadastrar{
+    position: absolute;
+    left: 130px;
+    top: 840px;
+}
+
+.limpar{
+    position: absolute;
+    left: 300px;
+    top: 840px;
+}
+
+#texto{
+    height: 200px;
+    width: 450px;
+    border-radius: 12px;
+    border-color: #F58800;
+    position: relative;
+    top: 10px;
+    left: 40px;
+    font-size: 15px;
+}
+
+#socialNumber{
+    position: relative;
+    top: 30px;
+    left: -30px;
+}
+
+#passwordRepeat{
+    position: relative;
+    top: 5px;
+    left: 30px;
+}
+
+#birthDate{
+    position: absolute;
+    top: 360px;
+    left: 45px;
+    height: 30px;
+}
+
+
