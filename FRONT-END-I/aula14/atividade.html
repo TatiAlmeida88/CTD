@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casa dos Bolos</title>
+    <link rel="stylesheet" href="atividade.css">
+</head>
+<body>
+    <form>
+        
+        <div class="topo">
+            <h1 class="títuloPrincipal">Casa dos Bolos</h1>
+            <img class="logo" src="logodoce.jpg">
+        </div>
+
+        <fieldset class="fs1">
+
+            <legend class="legend1">Identificação</legend>
+
+            <div>
+                <label for="name">Nome</label>
+                <input required type="text" name="name" id="name">
+
+                <label for="email">Email</label>
+                <input type="text" name="email" id="email">
+
+                <label for="phone">Telefone</label>
+                <input required type="number" name="phone" id="phone">
+            </div>
+
+            <fieldset class="fs2">
+
+                <legend class="legend2">Endereço</legend>
+
+                <div>
+                    <label for="rua">Logradouro</label>
+                    <input required type="text" name="rua" id="rua">
+
+                    <label for="número">Número</label>
+                    <input required type="number" name="número" id="número">
+
+                    <label for="complemento">Complemento</label>
+                    <input type="text" name="complemento" id="complemento">
+                    
+                </div>
+                
+                <div>
+                    <label for="bairro">Bairro</label>
+                    <input required type="text" name="bairro" id="bairro">
+
+                    <label for="pontoRef">Ponto de Referência</label>
+                    <input type="text" name="pontoRef" id="pontoRef">
+                </div>
+
+            </fieldset>
+            
+        </fieldset>
+
+        <fieldset class="fs1">
+
+            <legend class="legend1">Monte seu pedido</legend>
+
+            <div class="pedido">
+                <label for="massa">Selecione a massa do bolo:</label>
+                <select name="massa" id="massa">
+                    <option value="">Chocolate</option>
+                    <option value="">Festa</option>
+                    <option value="">Mesclado</option>
+                    <option value="">Cenoura</option>
+                    <option value="">Limão</option>
+                </select>
+            </div>
+
+            <div class="pedido">
+                <label for="recheio">Selecione o recheio:</label>
+                <select name="recheio" id="recheio">
+                    <option value="">Chocolate</option>
+                    <option value="">Morango</option>
+                    <option value="">Doce de leite</option>
+                    <option value="">Nozes</option>
+                    <option value="">Prestígio</option>
+                    <option value="">Nutella</option>
+                </select>
+            <div>
+
+            <div class="pedido">
+                <label for="cobertura">Selecione a cobertura:</label>
+                <select name="cobertura" id="cobertura">
+                    <option value="">Pasta americana</option>
+                    <option value="">Fondant</option>
+                    <option value="">Buttercream</option>
+                    <option value="">Merengue</option>
+                    <option value="">Chantili</option>
+                    <option value="">Ganache</option>
+                    <option value="">Glacê</option>
+                </select>            
+            </div>
+
+            <div class="pedido">
+                <label>Selecione o tamanho do bolo:</label>
+                <input checked type="radio" name="tamanho" id="tamanho1">
+                <label for="tamanho">P (300g)</label>
+
+                <input type="radio" name="tamanho" id="tamanho2">
+                <label for="tamanho">M (600g)</label>
+
+                <input type="radio" name="tamanho" id="tamanho3">
+                <label for="tamanho">G (900g)</label>
+            </div>
+
+            <fieldset class="fs2">
+                
+                <legend class="legend2">Itens adicionais:</legend>
+                
+                <div>                
+                    <input type="checkbox" name="brigadeiro" id="brigadeiro">
+                    <label for="brigadeiro">Brigadeiro</label>
+                    <select name="quantBrigadeiro" id="quantBrigadeiro">
+                        <option value="">25</option>
+                        <option value="">50</option>
+                        <option value="">100</option>
+                    </select>
+                    <label for="quantBrigadeiro">unidades</label>
+                </div>
+
+                <div>                
+                    <input type="checkbox" name="casadinho" id="casadinho">
+                    <label for="casadinho">Casadinho</label>
+                    <select name="quantCasadinho" id="quantCasadinho">
+                        <option value="">25</option>
+                        <option value="">50</option>
+                        <option value="">100</option>
+                    </select>
+                    <label for="quantCasadinho">unidades</label>
+                </div>
+
+                <div>                
+                    <input type="checkbox" name="beijinho" id="beijinho">
+                    <label for="beijinho">Beijinho</label>
+                    <select name="quantBeijinho" id="quantBeijinho">
+                        <option value="">25</option>
+                        <option value="">50</option>
+                        <option value="">100</option>
+                    </select>
+                    <label for="quantBeijinho">unidades</label>
+                </div>
+
+                <div>                
+                    <input type="checkbox" name="trufa" id="trufa">
+                    <label for="trufa">Trufa</label>
+                    <select name="quantTrufa" id="quantTrufa">
+                        <option value="">25</option>
+                        <option value="">50</option>
+                        <option value="">100</option>
+                    </select>
+                    <label for="quantTrufa">unidades</label>
+                </div>
+
+            </fieldset>
+            
+        </fieldset>
+
+        <fieldset class="fs1">
+            
+            <legend class="legend1">Forma de pagamento</legend>
+            
+            <select name="pgto" id="pgto">
+                
+                <option value="">Espécie</option>
+
+                <optgroup label="Cartão">
+                    <option value="">Visa</option>
+                    <option value="">Mastercard</option>
+                    <option value="">Hipercard</option>
+                    <option value="">Visa</option>
+                    <option value="">Elo</option>
+                    <option value="">Alelo</option>
+                    <option value="">American Express</option>
+                </optgroup>
+
+                <optgroup label="PIX">
+                    <option value="">Tel xxxx-xxxx</option>
+                    <option value="">Email xxxxx@xxxxx.com</option>
+                    <option value="">CPF xxx.xxx.xxx-xx</option>
+                </optgroup>
+                
+            </select>
+
+        </fieldset>
+
+        <button type="submit">Enviar pedido</button>
+    
+        <button type="reset">Limpar campos</button>
+
+    </form>
+
+</body>
+
+</html>

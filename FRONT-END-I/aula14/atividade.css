@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(https://static.joelbabh.com.br/produto-data/2019.09.18-23.53.31-4_p.jpg);
+    background-size: 1000px 1300px;
+    background-repeat: no-repeat;
+    font-family: 'Dancing Script', cursive;
+    font-size: 25px;
+}
+
+input{
+    border-radius: 10px;
+    height: 30px;
+    border: rgb(134, 23, 88) solid 2px;
+}
+
+select{
+    border-radius: 10px;
+    height: 25px;
+    border: rgb(134, 23, 88) solid 2px;
+    text-align: center;
+}
+
+button{
+    font-size: 20px;
+    text-shadow: black 1px 1px;
+    color: rgb(231, 21, 144);
+    padding: 10px;
+    border-radius: 10px;
+    border: rgb(102, 12, 65) 3px solid;
+    margin: 20px;
+    position: relative;
+    left: 300px;
+}
+
+.títuloPrincipal{
+    font-size: 100px;
+    color: rgb(231, 21, 144);
+    text-shadow: black 5px 2px;
+    position: relative;
+    left: 20px;
+    top: 20px;
+}
+
+.topo{
+    border: rgb(231, 21, 144) double;
+    border-width: 20px;
+    width: 1000px;
+    height: 200px;
+}
+
+.logo{
+    position: relative;
+    left: 790px;
+    top: -108px;
+    height: 130px;
+    width: 150px;
+    border: black solid;
+}
+
+.legend1{
+    font-size: 45px;
+    color: rgb(231, 21, 144);
+    text-shadow: black 1px 1px;
+}
+
+.legend2{
+    font-size: 30px;
+    color: rgb(231, 21, 144);
+    text-shadow: black 1px 1px;
+}
+
+.fs1{
+    width: 980px;
+    margin: 10px;
+    border-width: 5px;
+    border-color: rgb(199, 42, 133);
+    padding: 10px 10px;
+    background-color: rgba(255, 255, 255, 0.349);
+}
+
+.fs2{
+    margin: 10px;
+    border-width: 2px;
+    border-color: rgb(199, 42, 133);
+    padding: 10px 10px;
+}
+
+.pedido{
+    margin: 10px;
+}
+
+#name{
+    width: 250px;
+    margin-right: 20px;
+}
+
+#email{
+    width: 250px;
+    margin-right: 20px;
+}
+
+#phone{
+    width: 150px;
+}
+
+#número{
+    width: 50px;
+    margin-right: 20px;
+}
+
+#rua{
+    width: 230px;
+    margin-right: 20px;
+}
+
+#complemento{
+    width: 230px;
+}
+
+#bairro{
+    margin: 20px 20px 10px 0px;
+    
+}
+
+#pontoRef{
+    border-radius: 10px;
+    height: 30px;
+    width: 420px;
+    border: rgb(134, 23, 88) solid 2px;
+    margin-top: 20px;
+}
+
+#pgto{
+    margin: 10px;
+    text-align: left;
+}
+
