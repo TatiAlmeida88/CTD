@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script type="text/javascript">
+    
+    //Atividade I
+    
+    var contaBancaria = {
+        nome: "Tatiana",
+        sobrenome: "Almeida",
+        nomeCompleto: function(){
+            return `${this.nome} ${this.sobrenome}`;
+        },
+        agencia: 3030,
+        conta: 123456,
+        saldoAtual: 100,
+        deposito: 50,
+        saque: 10,
+    };
+
+    //Atividade II
+
+    console.log(`Agora seu saldo atual é de R$ ${contaBancaria.saldoAtual}!`);
+
+    var valorDeposito = 20;
+    
+    contaBancaria.saldoAtual = contaBancaria.saldoAtual + valorDeposito;
+    
+    console.log(`Você depositou R$${valorDeposito}! Agora seu saldo atual é de R$${contaBancaria.saldoAtual}!`);
+
+    var valorSaque = 20;
+    
+    if (valorSaque < contaBancaria.saldoAtual){
+        contaBancaria.saldoAtual = contaBancaria.saldoAtual - valorSaque;
+        console.log(`Você sacou R$${valorSaque}! Agora seu saldo atual é de R$${contaBancaria.saldoAtual}!`);
+    }
+        else{
+            console.log(`Saldo insuficiente! Seu Saldo Atual é de R$${contaBancaria.saldoAtual}!`)
+        }
+
+    
+    //Atividade III
+
+    var contaBancariaJson = JSON.stringify(contaBancaria);
+    console.log (contaBancariaJson);
+    
+    </script>
+
+</body>
+</html>

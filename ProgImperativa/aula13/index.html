@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<script type="text/javascript">
+
+    //JSON
+    var aluno = {
+        nome: "Tatiana",
+        sobrenome: "Almeida",
+        nomeCompleto: function(){
+            return `${this.nome} ${this.sobrenome}`;
+            
+        }
+    }
+
+    //Convertendo em JSON
+    var api = JSON.stringify(aluno);
+    // console.log(api);
+
+    //Não é possível acessar propriedades, pois é um texto e não uma array ou objeto
+    // console.log(api.nome)
+
+    //É um tipo de texto
+    // console.log(typeof(api));
+
+    // Não tem suporte para funções
+    // console.log(api.nomeCompleto());
+
+    //( ) Convertendo JSON em objeto literal
+    var objetoLiteral = JSON.parse(api);
+    console.log(objetoLiteral);
+
+    //Convertendo em objeto literal é possível acessar as propriedades
+    console.log(objetoLiteral.nome);
+    console.log(objetoLiteral.sobrenome);
+
+    //função??
+    console.log(objetoLiteral.nomeCompleto);
+
+
+
+    // Objeto Literal
+    var professor = {
+        nome: "Willian",
+        sobrenome: "Sant Anna",
+        nomeCompleto: function(){
+            return `${this.nome} ${this.sobrenome}`;
+            // this é para se referir que nome e sobrenome está dentro de esta variável.
+        }
+    }
+
+    // console.log(professor.nome);
+    // console.log(professor.sobrenome);
+    // console.log(professor.nomeCompleto());
+
+</script>
+
+</body>
+</html>
