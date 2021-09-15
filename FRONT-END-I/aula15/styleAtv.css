@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+button{
+    padding: 12px;
+    font-size: 24px;
+    border-radius: 15px;
+    background-color: rgba(250, 128, 114, 0.459);
+    color: rgb(148, 27, 14);
+    transition-duration: 1s;
+}
+
+button:hover{
+    font-size: 36px;
+    background-color: salmon;
+    color: rgb(0, 0, 0);
+    border: rgb(255, 25, 0) solid 5px;
+}
+
+div{
+    margin: 12px;
+}
+
+p::first-letter{
+    color: rgb(148, 27, 14);
+    font-size: 48px;
+    font-family: 'Great Vibes', cursive;
+}
+
+.texto{
+    background-color: rgba(250, 128, 114, 0.459);
+    border: rgb(148, 27, 14) solid 1px;
+    border-radius: 10px;
+}
+
+.texto:focus{
+    background-color: salmon;
+    border-width: 3px;
+}
+
+.texto:disabled{
+    background-color: rgb(206, 206, 206);
+}
+
+.texto:enabled{
+    padding: 5px;
+}
+
+.texto:invalid{
+    border: rgb(225, 0, 255) 4px solid;
+    background-color: rgba(225, 0, 255, 0.473);
+}
+
+.checkbox ~label{
+    transition-duration: 1s;
+}
+
+.checkbox:checked{
+    transform: scale(2);
+}
+
+.checkbox:checked ~label {
+    color: blue;
+    font-size: 24px;
+}
+
+li:nth-child(2n){
+    color: coral;
+}
+
+li:nth-child(3n){
+    background-color: rgba(255, 68, 0, 0.158);
+}

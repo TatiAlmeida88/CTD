@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+button{
+    border: none;
+    padding: 12px 24px;
+    background-color: black;
+    color: gray;
+    transition-duration: 1s;
+}
+
+button:hover{
+    background-color: grey;
+    color: black;
+}
+
+input{
+    background-color: #d1d1d1;
+    border: 2px solid;    
+}
+
+input:hover{
+    padding: 12px;
+}
+
+input:focus{
+    background-color: rgb(146, 145, 145);
+}
+
+input:disabled{
+    background-color: red;
+}
+
+input:valid{
+    border-color: green
+}
+
+input:invalid{
+    border-color: red;
+}
+
+.checkbox{
+    transition-duration: .5s;
+}
+
+.checkbox:checked{
+    transform: scale(2);
+}
+
+.checkbox:checked ~ label{
+
+}
+
+tr{
+    display: flex;
+    flex-direction: column;
+}
+
+td:nth-child(3n){
+    color: red;
+}
+
+p::first-letter{
+    color: red;
+    font-size: 48px;
+    font-family: 'Great Vibes', cursive;
+}
