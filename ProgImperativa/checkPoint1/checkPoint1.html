@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microondas</title>
+</head>
+<body>
+    <script>
+        
+        function microondas(){
+
+            var prato = prompt("Qual prato deseja fazer?");
+
+            switch(prato){
+                
+                case "pipoca":
+                    
+                    let tempoPadrao1 = 10;
+
+                    let tempo1 = prompt("Quanto tempo deseja para fazer o prato?");
+                            
+                    if(tempo1 >= 3*tempoPadrao1){
+                        alert("KABUMM!");
+                        microondas();
+                    }
+
+                        else if(tempo1 > 2*tempoPadrao1 && tempo1 < 3*tempoPadrao1){
+                            alert("A comida queimou. Tente novamente.");
+                            microondas();
+                        }
+
+                            else if(tempo1 < tempoPadrao1){
+                                alert("Tempo insuficente. Tente novamente.");
+                                microondas();
+                            }
+
+                                else{
+                                    alert("Prato pronto! Bom apetite!");
+                                }
+
+                    break;
+
+                case "macarrão":
+
+                    let tempoPadrao2 = 8;
+
+                    let tempo2 = prompt("Quanto tempo deseja para fazer o prato?");
+                            
+                    if(tempo2 >= 3*tempoPadrao2){
+                        alert("KABUMM!");
+                        microondas();
+                    }
+
+                        else if(tempo2 > 2*tempoPadrao2 && tempo2 < 3*tempoPadrao2){
+                            alert("A comida queimou. Tente novamente.");
+                            microondas();
+                        }
+
+                            else if(tempo2 < tempoPadrao2){
+                                alert("Tempo insuficente. Tente novamente.");
+                                microondas();
+                            }
+
+                                else{
+                                    alert("Prato pronto! Bom apetite!");
+                                }
+
+                    break;
+
+                case "carne":
+
+                    let tempoPadrao3 = 15;
+
+                    let tempo3 = prompt("Quanto tempo deseja para fazer o prato?");
+                            
+                    if(tempo3 >= 3*tempoPadrao3){
+                        alert("KABUMM!");
+                        microondas();
+                    }
+
+                        else if(tempo3 > 2*tempoPadrao3 && tempo3 < 3*tempoPadrao3){
+                            alert("A comida queimou. Tente novamente.");
+                            microondas();
+                        }
+
+                            else if(tempo3 < tempoPadrao3){
+                                alert("Tempo insuficente. Tente novamente.");
+                                microondas();
+                            }
+
+                                else{
+                                    alert("Prato pronto! Bom apetite!");
+                                }
+
+                    break;
+
+                case "feijão":
+
+                    let tempoPadrao4 = 12;
+
+                    let tempo4 = prompt("Quanto tempo deseja para fazer o prato?");
+                            
+                    if(tempo4 >= 3*tempoPadrao4){
+                        alert("KABUMM!");
+                        microondas();
+                    }
+
+                        else if(tempo4 > 2*tempoPadrao4 && tempo4 < 3*tempoPadrao4){
+                            alert("A comida queimou. Tente novamente.");
+                            microondas();
+                        }
+
+                            else if(tempo4 < tempoPadrao4){
+                                alert("Tempo insuficente. Tente novamente.");
+                                microondas();
+                            }
+
+                                else{
+                                    alert("Prato pronto! Bom apetite!");
+                                }
+
+                    break;
+
+                case "brigadeiro":
+
+                    let tempoPadrao5 = 8;
+
+                    let tempo5 = prompt("Quanto tempo deseja para fazer o prato?");
+                            
+                    if(tempo5 >= 3*tempoPadrao5){
+                        alert("KABUMM!");
+                        microondas();
+                    }
+
+                        else if(tempo5 > 2*tempoPadrao5 && tempo5 < 3*tempoPadrao5){
+                            alert("A comida queimou. Tente novamente.");
+                            microondas();
+                        }
+
+                            else if(tempo5 < tempoPadrao5){
+                                alert("Tempo insuficente. Tente novamente.");
+                                microondas();
+                            }
+
+                                else{
+                                    alert("Prato pronto! Bom apetite!");
+                                }
+
+                    break;
+                
+                default:
+                    alert("Prato inexistente. Tente novamente.");
+                    microondas();
+            }
+        }
+
+        microondas();
+
+    </script>
+</body>
+</html>
