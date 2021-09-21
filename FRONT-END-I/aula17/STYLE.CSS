@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh; /*vh é um tamanho flexível, depende da tela do usuário*/
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    /* flex-direction:column; */
+}
+
+main section{
+    height: 300px;
+    width: 300px;
+    /* display: inline-flex; */
+}
+
+main section:nth-child(even){
+    background-color: violet;
+}
+
+main section:nth-child(odd){
+    background-color: blueviolet;
+}
+

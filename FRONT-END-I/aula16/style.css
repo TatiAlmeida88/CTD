@@ -1,0 +1,25 @@
+button{
+    border: none;
+    padding: 12px 32px;
+    transition-duration: 1s;
+    
+}
+
+.b1{
+    transition-timing-function: ease-in;
+}
+
+.b2{
+    transition-timing-function: ease-out;
+}
+
+.b3{
+    transition-timing-function: ease-in-out;
+}
+
+button:hover{
+    background-color: red;
+    margin-top: 10px;
+    transform: scale(2);
+
+}
