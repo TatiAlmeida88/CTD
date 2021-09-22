@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 200px 1fr; /*fr pegar o espaço que sobrou depois de colocar 200px na primeira coluna. Auto serve pra mesma coisa*/
+    grid-template-areas: 
+    'header header'
+    'aside main'
+    'footer footer';
+    /* grid-template-rows: 100px 1fr 100px; */
+}
+
+body header{
+    background-color: salmon;
+    grid-area: header;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    height: 50px;
+    z-index: 2;
+}
+
+body aside{
+    background-color: crimson;
+    grid-area: aside;
+    position: sticky;
+    top: 50px;
+    z-index: 1;
+}
+
+body main{
+    background-color: lightseagreen;
+    grid-area: main;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 24px;
+}
+
+body footer{
+    background-color: mediumvioletred;
+    grid-area: footer;
+}
+
+main section{
+    background-color: midnightblue;
+    /* width: 200px; */
+    height: 200px;
+}
+
+aside ul{
+    position: fixed;
+}
