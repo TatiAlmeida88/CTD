@@ -1,0 +1,15 @@
+div{
+    background-color: aqua;
+    height: 300px;
+    width: 300px;
+}
+
+@media (max-width: 768px){
+    div{
+        width: 100%;
+    }
+
+}
+
+/* min: a partir de 450px ficar 100% */
+/* max:  até 450px fica com 100%*/

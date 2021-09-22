@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: grid;
+    grid-template-columns: 100px auto;
+    grid-template-areas: 
+    'header header'
+    'aside main'
+    'footer footer';
+}
+
+body header{
+    background-color: rgb(98, 78, 99);
+    color: white;
+    height: 100px;
+    grid-area: header;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    font-size: 30px;
+    display: flex;
+    gap: 50px;
+    padding: 15px 30px;
+}
+
+body aside{
+    background-color: rgb(201, 150, 204);
+    grid-area: aside;
+    font-size: 18px;
+    padding: 10px;
+    position: sticky;
+    top: 100px;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+aside ul{
+    position: fixed;
+}
+
+aside li{
+    margin: 40px 20px;
+}
+
+body main{
+    background-color: rgba(98, 78, 99, 0.151);
+    grid-area: main;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+    
+}
+
+body footer{
+    background-color: rgb(98, 78, 99);
+    color: white;
+    grid-area: footer;
+    height: 50px;
+    font-size: 24px;
+    padding: 10px;
+    text-align: right;
+}
+
+@media(max-width: 425px){
+
+    body{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-areas: 
+        'header'
+        'aside'
+        'main'
+        'footer';
+    }
+ 
+    aside ul{
+        display: flex;
+        flex-direction: row;
+        position: relative;
+    }
+
+    body aside{
+        height: 50px;
+    }
+    
+    aside li{
+        margin: 5px 20px;
+    }
+    
+}
