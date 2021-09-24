@@ -1,0 +1,14 @@
+{
+  "name": "mesa18",
+  "version": "1.0.0",
+  "description": "mesa de trabalho da aula 18",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tatiana Almeida, Salomão Santos, Paulo Souza, Thomas Mendes, Felipe Bertevello",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

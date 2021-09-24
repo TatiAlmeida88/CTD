@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Titulo</title>
+
+    <style>
+
+* {
+         padding: 0;
+         margin: 0;
+         box-sizing: border-box;
+      }
+
+      html{
+          font-family: sans-serif;
+      }
+
+      .container{
+          width: 80%;
+          height: 100vh;
+
+          background-color: #bbdef3;
+          border: 1px solid #3191c8;
+          border-radius: 8px;
+
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          align-items: center;
+          justify-content: center;
+      }
+
+      button{
+          padding: 8px 24px;
+
+          background-color: #7a25c8;
+          color: #fff;
+          border: none;
+          border-radius: 8px;
+          cursor: pointer;
+          transition: 1s;
+          box-shadow: 1px 1px 2px 1px;
+      }
+
+      button:hover{
+          background: orange;
+        
+      }
+
+
+
+    </style>
+
+</head>
+<body>
+    
+    <section class="container">
+        <h1>Esta é uma página HTML enviada pelo Nodejs</h1>
+
+        <p>Para ser redirecionado para o Google</p>
+
+        <button onclick="direciona()">Clique aqui</button>
+        <p>2021 - CTD Mesa de trabalho</p>
+
+    </section>
+
+    <script>
+        function direciona(){
+            if (confirm("Deseja mesmo sair dessa página?")){
+                window.open('http://www.google.com.br', '_blank');
+            }else(alert("Obrigado! Você pode acessar a página a qualquer momento!"))
+        }
+    </script>
+
+
+</body>
+</html>
