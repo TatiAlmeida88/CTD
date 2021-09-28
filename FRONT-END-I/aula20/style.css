@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: thistle;
+}
+
+header{
+    background-color: blueviolet;
+    padding: 20px 50px;
+    position: sticky;
+    top: 0;
+}
+
+ul{
+    display: flex;
+    gap: 50px;
+}
+
+li{
+    list-style: none;
+}
+
+li:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+    color: burlywood;
+}
+
+a{
+    color: white;
+    font-size: 30px;
+}
+
+a:hover{
+     color: burlywood;
+}
+
+img{
+    height: calc(100vh - 20px);
+    width: 100vw;
+    
+}
+
+.artigos{
+    font-size: 20px;
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+h1{
+    color: white;
+    text-shadow: black 1px 1px;
+}
+
+footer{
+    background-color: violet;
+    height: 50px;
+}
+
+@media (max-width: 768px){
+    .artigos{
+        flex-direction: column;
+    }
+}
