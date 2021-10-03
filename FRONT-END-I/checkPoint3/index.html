@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Salão de Beleza</title>
+    <!-- 
+OK - O banner deve ter o efeito parallax, (pesquise por background-attachment.)
+O head deve variar de acordo com a página atual. Ex: Na página do filme peter pan ficaria: DH Flix | Peter Pan
+Header deve conter 5 itens além da logo. Cada item deve linkar com uma parte do site ou uma página externa.
+O site deve ter hover e transições.
+O site deve ser feito com Bootstrap.
+O header tem de ter no mínimo 20px de altura.
+O banner tem de ter um botão e uma breve descrição do site.
+O site deve ter rolagem suave.
+Mínimo de itens para listagem é 6.
+A listagem dos itens tem de ter um scale e ganho de opacidade no hover, mas se quiser fazer outra animação, também pode.
+Seu site tem de ter uma página de detalhes para cada item listado onde haverá uma explicação sobre o mesmo. Ex: A página de um filme teria sua sinopse, link para o trailer e ficha técnica.
+Formulário de login, cujo acesso é feito no header.
+Todo o site deve estar responsivo.
+-->
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark navbar-salao">
+            <div class="container-fluid">
+                <a class="navbar-brand">Salão de Beleza</a>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-2">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                </ul>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-2">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Agende um horário</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="luzes.html">Luzes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="unhas.html">Unhas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="maquiagem.html">Maquiagem</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="diadanoiva.html">Dia da Noiva</a>
+                        </li>
+                    </ul>
+                    </form>
+                </div>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-2">
+                <li class="nav-item">
+                    <a class="nav-link" href="#contato">Contato</a>
+                </li>
+            </ul>
+                
+                <form class="d-flex">
+                    <button type="button" class="btn btn-dark btn-transition"><a class="login"
+                            href="cadastro.html">Login</a></button>
+            </div>
+        </nav>
+    </header>
+
+
+    <div class="parallax"></div>
+
+
+    <div class="container produtos">
+        <div class="row">
+            <div class="col-lg-3  col-md-6 col-xs-12">
+                <div class="card card_width">
+                    <img class="produto-foto" src="https://opetroleo.com.br/wp-content/uploads/2021/01/Cortes-de-Cabelo-Curtos-630x600.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">LUZES</h5>
+                        <p class="card-text">Faça suas tão sonhadas luzes da maneira mais espetacular possível</p>
+                        <a href="luzes.html" class="btn btn-primary">Saiba mais</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3  col-md-6 col-xs-12">
+                <div class="card card_width">
+                    <img class="produto-foto" src="https://www.queytipeliculas.com.br/2531-large_default/adesivos-de-unha-oncinha-nude.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">MANICURE</h5>
+                        <p class="card-text">Conte com nossos profissionais para mãos e pés maravilhosos! </p>
+                        <a href="manicure.html" class="btn btn-primary">Saiba mais</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3  col-md-6 col-xs-12">
+                <div class="card card_width">
+                    <img class="produto-foto" src="https://s.afnoticias.com.br/cache/2021/c6b3ba2eeae75dee87005cafa2a0522c.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">MAQUIAGEM</h5>
+                        <p class="card-text">Sinta-se linda como nunca com os melhores maquiadores da região.</p>
+                        <a href="maquiagem.html" class="btn btn-primary">Saiba mais</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3  col-md-6 col-xs-12">
+                <div class="card card_width">
+                    <img class="produto-foto" src="https://reyne.info/images5/0717L/cabelo-de-noiva-semi-preso/cabelo-de-noiva-semi-preso-27.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">DIA DA NOIVA</h5>
+                        <p class="card-text">Aproveite o seu dia como ele merece ser aproveitado.</p>
+                        <a href="diadanoiva.html" class="btn btn-primary">Saiba mais</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <footer id="contato" class="text-center text-lg-start bg-light text-muted">
+
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+
+            <div>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-google"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+
+        </section>
+        <section class="">
+            <div class="container text-center text-md-start mt-5">
+
+                <div class="row mt-3">
+
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            <i class="fas fa-gem me-3"></i>SALÃO DE BELEZA
+                        </h6>
+                        <p>
+                            Com o nosso time você sempre pode confiar. Sempre buscamos novas habilidades e o
+                            perfeccionismo que você merece.
+                        </p>
+                    </div>
+
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Products
+                        </h6>
+                        <p>
+                            <a href="#!" class="text-reset">Whatsapp</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Instagram</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Facebook</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Tiktok</a>
+                        </p>
+
+                    </div>
+
+
+
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Contato
+                        </h6>
+                        <p><i class="fas fa-home"></i> Avenida Paulista Nº 571, São Paulo - SP</p>
+                        <p>
+                            <i class="fas fa-envelope"></i>
+                            contato@salaodebeleza.com
+                        </p>
+                        <p><i class="fas fa-phone"></i> +55 (19) 99999-9999</p>
+                        <p><i class="fas fa-print"></i> +55 (19) 99999-9999</p>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+    </footer>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+crossorigin="anonymous"></script>
+</html>

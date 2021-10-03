@@ -1,0 +1,57 @@
+.parallax {
+    background-image: url("https://images.adsttc.com/media/images/6013/8f05/f91c/8125/1500/02d2/large_jpg/Roby_Salao_Beleza-3774.jpg?1611894525");
+    min-height: 40vh; 
+    background-attachment: fixed;
+    background-position: 0px -300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 30px;
+  }
+
+.card_width {
+    width: 18rem;
+
+}
+
+.produto-foto {
+    height: 280px;
+}
+
+.produtos {
+    position:flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+.navbar-salao {
+      background-color: coral;
+}
+
+
+.d-flex{
+    gap: 20px;
+}
+
+.btn-transition:hover{
+    background-color: gray;
+}
+
+.login{
+    text-decoration: none;
+    color: inherit;
+}
+
+.btn-active{
+    font-weight: bolder;
+}
+
+.titulo-cadastro{
+    font-size: 24px;
+}
+
+.cadastro{
+    padding: 30px;
+    margin: 20px;
+    background-color: rgba(255, 127, 80, 0.219);
+}
